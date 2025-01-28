@@ -7,4 +7,7 @@
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
 script = ExtResource( 2 )
 
-[node name="Dice" parent="." instance=ExtResource( 1 )]
+[node name="Pivot" type="Spatial" parent="."]
+
+[node name="Dice" parent="Pivot" instance=ExtResource( 1 )]
+skeleton = NodePath("../..")
